@@ -1,7 +1,7 @@
 package ru.university.lab2;
 
 public class IntegerTraps {
-    public static void runAllSteps() {
+    public static void runIntegerTraps() {
         step1_minMaxValues();
         step2_overflowMaxPlusOne();
         step3_multiplicationOverflow();
