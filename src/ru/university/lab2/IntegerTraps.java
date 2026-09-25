@@ -14,13 +14,13 @@ public class IntegerTraps {
     private static void step1_minMaxValues() {
         System.out.println(" 1. MIN/MAX значения");
         System.out.println("byte:  " + Byte.MIN_VALUE + " - " + Byte.MAX_VALUE);
-        // byte занимает 1 байт (8 бит), знаковый -> диапазон -128..127 (2^8 значений)
+        // byte занимает 1 байт (8 бит), знаковый -> диапазон -128 - 127 (2^8 значений)
         System.out.println("short: " + Short.MIN_VALUE + " - " + Short.MAX_VALUE);
-        // short занимает 2 байта (16 бит) -> -32768..32767
+        // short занимает 2 байта (16 бит) -> -32768 - 32767
         System.out.println("int:   " + Integer.MIN_VALUE + " - " + Integer.MAX_VALUE);
-        // int занимает 4 байта (32 бита) -> -2147483648..2147483647
+        // int занимает 4 байта (32 бита) -> -2147483648 - 2147483647
         System.out.println("long:  " + Long.MIN_VALUE + " - " + Long.MAX_VALUE);
-        // long занимает 8 байт (64 бита) -> -9223372036854775808..9223372036854775807
+        // long занимает 8 байт (64 бита) -> -9223372036854775808 - 9223372036854775807
 
     }
 
@@ -91,12 +91,10 @@ public class IntegerTraps {
         // При сужающем приведении long -> int просто отбрасываются старшие 32 бита
         // 64-битного представления, оставшиеся 32 бита интерпретируются как int, включая знаковый бит
 
-        long veryBig = 10_000_000_000L;
-        System.out.println("Ещё пример: " + veryBig + " -> " + (int) veryBig);
+
 
     }
 
-    // 6. Арифметика над char
     private static void step6_charArithmetic() {
         System.out.println(" 6. Арифметика над char");
 
